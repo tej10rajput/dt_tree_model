@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red wine Quality Check</title>
+</head>
+<body bgcolor=#ff80e>
+    
+    <h1> Red wine quality model</h1>
+    
+    <form action="/get_data" method="POST">
+        <label>fixed acidity: </label><input type="number" step="any" name="fixed acidity"><br><br>
+        <label>volatile acidity: </label><input type="number" step ="any" name="volatile acidity"><br><br>
+        <label>citric acid: </label><input type="number" step= "any" name="citric acid"><br><br>
+        <label>residual sugar: </label><input type="number" step="any" name="residual sugar"><br><br>
+        <label>chlorides: </label><input type="number" step="any" name="chlorides"><br><br>
+        <label>free sulfur dioxide: </label><input type="number" step="any" name="free sulfur dioxide"><br><br>
+        <label>total sulfur dioxide: </label><input type="number" step="any" name="total sulfur dioxide"><br><br>
+        <label>density: </label><input type="number" step="any" name="density"><br><br>
+        <label>pH: </label><input type="number" step="any" name="pH"><br><br>
+        <label>sulphates: </label><input type="number" step="any" name="sulphates"><br><br>
+        <label>alcohol: </label><input type="number" step="any" name="alcohol"><br><br>
+        <input type="submit" value="PREDICT">
+
+        <h3>{{PREDICT_VALUE}}</h3>
+
+
+
+    </form>
+</body>
+</html>
